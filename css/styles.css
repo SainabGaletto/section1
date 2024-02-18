@@ -1,0 +1,144 @@
+/*Name: Sainab Galetto | Student number: 8903493*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Root HTML element style, with font declaration */
+html {
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 1.5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    font : italic normal bold 20px/1.5 Times, "Times New Roman", Georgia, serif;
+
+    color: white;
+}
+
+/* Body styles */
+body {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.5rem; 
+    background-color: #555;
+}
+
+/* Paragraph styles */
+p {
+    color: white; 
+    font-size: 16px; 
+}
+
+/* Headings styles (h1, h2) */
+h1, h2 {
+    font-variant: small-caps;
+    color: white; 
+    text-align: center;
+}
+
+/*  Figcaption styles */
+figcaption {
+    font-weight: bold;
+    font-variant: small-caps;
+    font-size: 1.2rem; 
+}
+
+
+/* Quote (q) element */
+q {
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1rem; 
+    padding: 1rem;
+}
+
+/* Bio styles */
+#bio {
+    text-align: left;
+}
+
+/* Header and Footer styles */
+header, footer {
+    text-align: center;
+    border: 0.1rem solid #fcfcfc; 
+    background: linear-gradient(rgb(3, 3, 3), rgb(69, 69, 69), rgb(164, 164, 164));
+    color: white;
+}
+
+/* Main section styles */
+.main-section {
+    background-color: hsla(0, 0%, 40%, 0.5);
+    padding: 1.5rem;
+    text-align: center; 
+    padding: 1rem;
+}
+
+/* Figure styles in main section */
+.figura-seccion-principal {
+    width: 100%;
+    height: auto; 
+    text-align: center;
+    margin: 1rem 0;
+    padding: 1.5rem;
+}
+
+/* Image styles inside figures */
+.figura-seccion-principal img {
+    width: 100%;
+    height: auto;
+    border-radius: 1.5rem;
+    padding: 1rem;
+}
+
+/* Video styles */
+video {
+    width: 100%;
+    height: auto;
+    border: 0.1rem solid #000; 
+    border-radius: 1rem;
+}
+
+/* Absolute path image styles */
+#absolute-path-image {
+    background-color: hsla(0, 0%, 10%, 0.5);
+    border: 0.1rem solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+}
+#absolute-path-image figcaption {
+    color: rgb(255, 255, 255); 
+}
+
+/* Relative path image styles */
+#relative-path-image {
+    background-color: hsla(0, 0%, 76%, 0.5); 
+    border: 0.1rem solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+}
+#relative-path-image figcaption {
+    color: rgb(0, 0, 0); 
+}
+
+/* Footer styles */
+footer p{
+    color: white; 
+    font-size: 0.75rem;
+}
+
+/* Blockquote with quote id styles */
+#quote {
+    border: 0.1rem solid #ffffff;
+    border-radius: 0.2rem;
+    box-shadow: 0.2rem 0.2rem 0.2rem rgb(73, 73, 73);
+    padding: 1rem;
+    background-color: hsla(0, 0%, 7%, 0.5); 
+}
