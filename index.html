@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Jane,Fonda,Activist,Actress,Blogger,Writer">
     <meta name="description" content="This site is about the life of Jane Fonda">
-
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
 
@@ -18,47 +17,48 @@
         <!-- Main Heading -->
         <h1 id="header-heading" class="headings">Jane Fonda</h1>
     </header>
+    <!-- Navigation Section -->
+    <nav>
+        <ul class="menu">
+            <li id="home-link"><a href="index.html">Home</a></li>
 
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
     <!-- Main Content Section -->
     <main>
-        <!-- Biography Section -->
-        <section class="main-section">
+        <div class="container">
+            <!-- Biography Section -->
             <!-- Biography Section Heading -->
-            <h2>Biography</h2>
-            <!-- Blockquote for Biography Content -->
-            <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Jane_Fonda">
-                <!-- Biography Content -->
-                <p><b>Jane Fonda</b> (born on December 21, 1937) is an American actress, writer, and activist. Born in New York, Fonda comes from a family dedicated to acting, being the daughter of the legendary actor Henry Fonda.</p>
-                
-                <p>She started her career as an actress in the 1960s and quickly became an iconic figure in the film industry. Throughout her career, she has won several awards, including two Academy Awards for her performances in "Klute" (1971) and "Coming Home" (1978).</p>
-                
-                <p>However, beyond her success in acting, Jane Fonda is also known for her commitment to social and political issues. During the 1960s and 1970s, she became a prominent activist, advocating for civil rights, women's rights, and against the Vietnam War.</p>
-        
-                <p>In more recent years, Fonda has continued her activism, focusing on environmental issues and climate change. Her dedication to social justice has made her an influential figure both in the entertainment world and in political activism.</p>
-            </blockquote>
-            <p><b>Actress, activist, and tireless advocate for human rights..</b></p>
-        </section>
+            <h2 id="main-heading">Biography</h2>
+            <div>
+                <blockquote id="bio" cite="https://en.wikipedia.org/wiki/Jane_Fonda">
+                    <p><strong>Jane Fonda</strong> (born December 21, 1937) is an American actress, writer, and activist from New York. Daughter of the legendary actor Henry Fonda, she rose to prominence in the 1960s as an iconic figure in the film industry. Fonda has won two Academy Awards for her roles in "Klute" (1971) and "Coming Home" (1978).</p>
+                    <br>
+                    <p>Beyond her acting success, Fonda is renowned for her activism. In the 1960s and 1970s, she advocated for civil rights, women's rights, and against the Vietnam War. In recent years, she has focused on environmental issues and climate change, solidifying her influence in both entertainment and activism.</p>
+                </blockquote>
+                <figure id="relative-path-image"  class="main-section-figure">
+                    <div class="clear"></div>
+                    <!-- Images Section -->
+                    <!--Relative Path Image-->
+                     <img src="image/fonda.jpg" alt="Jane Fonda arrested by the police during a 2019 climate change protest. She is handcuffed with her hands raised, sticking out her tongue, and dressed in red.">
+                     <figcaption>The actress and activist Jane Fonda detained in 2019 for protesting against climate change.</figcaption>
+                </figure>
+            </div>
 
-        <!-- Images Section -->
-        <section class="main-section">
-            <!-- Images Section Heading -->
+        <!-- Remove Absolute Path Image -->
+        <!-- <section class="main-section">
+            Images Section Heading 
             <h3 class="headings">Images</h3>
-            <!-- Absolute Path Image -->
             <figure class="figura-seccion-principal" id="absolute-path-image">
                 <img src="https://www.datocms-assets.com/39109/1611067847-1608425750592058-00-story-jane-fonda-mugshot-anniversary.jpg?auto=format%2Ccompress&cs=srgb" alt="Jane Fonda's detention on November 3, 1970. The image shows her face frontally, fist raised, and in profile.">
                 <figcaption>Actress Jane Fonda is shown in a Nov. 3, 1970, police mug shot after her arrest in Cleveland.</figcaption>
-            </figure>
-            <!-- Relative Path Image -->
-            <figure class="figura-seccion-principal" id="relative-path-image">
-                <img src="image/fonda.jpg" alt="Jane Fonda arrested by the police during a 2019 climate change protest. She is handcuffed with her hands raised, sticking out her tongue, and dressed in red.">
-                <figcaption>The actress and activist Jane Fonda detained in 2019 for protesting against climate change.</figcaption>
-            </figure>
-        </section>
+            </figure>-->
 
         <!-- Quote Section -->
         <section class="main-section">
             <!-- Quote Section Heading -->
-            <h3 class="headings">Quote</h3>
+            <br><h3 class="headings">Quote</h3>
             <!-- Blockquote for Quote Content -->
             <blockquote id="quote" cite="https://www.brainyquote.com/quotes/jane_fonda_384879">
                 <!-- Quote Content -->
@@ -72,14 +72,56 @@
         <!-- Media Section -->
         <section class="main-section">
             <!-- Media Section Heading -->
-            <h3 class="headings">Media</h3>            
+            <h3 class="headings">Media</h3>
             <!-- Video Content -->
-            <video controls>
+            <video controls poster="image/fondaYT.jpg" tabindex="-1">
                 <source src="video/jane.mp4" type="video/mp4">
+            </video>
         </section>
-             
-
+        </section>
     </main>
+    <!-- Aside Content Section -->
+    <!-- FAQ Section Heading -->
+    <aside>
+        <h3>FAQs</h3>
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td>What was Jane Fonda's full name at birth?</td>
+                <td>Jane Seymour Fonda.</td>
+            </tr>
+            <tr>
+                <td>Which movie earned Jane Fonda her first Academy Award for Best Actress?</td>
+                <td>"Klute" (1971), where she played the role of Bree Daniels, a New York City prostitute.</td>
+            </tr>
+            <tr>
+                <td>What is the title of the memoir that Jane Fonda published in 2005, which became a bestseller?</td>
+                <td>"My Life So Far".</td>
+            </tr>
+            <tr>
+                <td>What recognition did Jane Fonda receive in 2001 for her work in the field of social activism?</td>
+                <td>She received the Gloria Steinem Award for feminist activism.</td>
+            </tr>
+            <tr>
+                <td>What 2018 documentary followed the life and activism of Jane Fonda?</td>
+                <td>The film is titled "Jane Fonda in Five Acts".</td>
+            </tr>
+            <tr>
+                <td>What was the name of the tour Jane Fonda embarked on in various states of the United States in 2019 to advocate for climate action?</td>
+                <td>The tour was called "Fire Drill Fridays: On the Road for the Green New Deal".</td>
+            </tr>
+        </table>
+        
+        <!-- External Links Section Heading -->
+        <h3>Resources</h3>
+        <a href="https://www.janefonda.com/" target="_blank">Official Website - Jane Fonda</a>
+        <br><a href="https://janepac.com/" target="_blank">Climate PAC - Jane Fonda</a>
+        <br><a href="https://med.emory.edu/departments/gynecology-obstetrics/centers/jane-fonda-center/index.html" target="_blank">The Jane Fonda Center for Reproductive Health</a>
+        <br><a href="https://www.gcapp.org/" target="_blank">The Georgia Campaign for Adolescent</a>
+    </aside>
     <!-- Footer Section -->
     <footer>
         <!-- Copyright Information -->

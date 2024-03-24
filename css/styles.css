@@ -1,5 +1,6 @@
-/*Name: Sainab Galetto | Student number: 8903493*/
+/* Name: Sainab Galetto | Student number: 8903493*/
 
+/* Reset CSS*/
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +13,7 @@ html {
     font-variant: small-caps;
     font-weight: lighter;
     font-size: 20px;
-    line-height: 1.5;
+    line-height: .5em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
     font : italic normal bold 20px/1.5 Times, "Times New Roman", Georgia, serif;
@@ -22,123 +23,351 @@ html {
 
 /* Body styles */
 body {
-    width: 80%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 1.5rem; 
-    background-color: #555;
+    width: 100%;
+    max-width: 1300px;
+    margin: auto;
+    padding: 0.25rem; 
+    background-color: #000000;
 }
 
 /* Paragraph styles */
 p {
     color: white; 
-    font-size: 16px; 
+    font-size: 16px;
+    font-weight: normal; 
+    font-variant: small-caps; 
+    text-align: center; 
+    font-family: arial;
 }
 
-/* Headings styles (h1, h2) */
-h1, h2 {
+/* Headings styles (h2) */
+h2 {
+    font-family: Helvetica;
     font-variant: small-caps;
-    color: white; 
+    color: rgb(255, 255, 255);
     text-align: center;
+    padding: 0.25rem;
+    margin: 0.25rem;
 }
 
-/*  Figcaption styles */
-figcaption {
-    font-weight: bold;
+/* Headings styles (h3) */
+h3 {
+    font-family: Helvetica;
     font-variant: small-caps;
-    font-size: 1.2rem; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 0rem;
+    margin: 0.8rem;
 }
 
-
-/* Quote (q) element */
-q {
-    font-style: italic;
-    font-family: cursive;
-    font-size: 1rem; 
-    padding: 1rem;
-}
-
-/* Bio styles */
-#bio {
-    text-align: left;
+/* Headings inside aside */
+aside {
+    float : right;
+    width : 30%;
+    margin-top: 0.25rem;
+    vertical-align: top;
 }
 
 /* Header and Footer styles */
 header, footer {
+    background-image: linear-gradient(to right, #000000 0%, #FF0000 30%, #FF0000 70%, #000000 100%);
+    margin : .25rem;
+    padding : .25rem;
+}
+
+/* Blockquote with quote id styles */
+#quote {
+    border: 0.1rem solid white; 
+    border-radius: 0.5rem; 
+    padding: 1rem; 
+}
+
+/* Navigation Styles */
+nav {
+    background-image: 
+    linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent), 
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparent), 
+    linear-gradient(to right, #000000 0%, #ff4343 30%, #ff4343 70%, #000000 100%);     
+    padding : .25rem;
+    margin : .25rem;
+    overflow: hidden;
+}
+
+/* Navigation List Styles */
+nav ul {
+    list-style-type: none;
     text-align: center;
-    border: 0.1rem solid #fcfcfc; 
-    background: linear-gradient(rgb(3, 3, 3), rgb(69, 69, 69), rgb(164, 164, 164));
-    color: white;
+    padding: 0 1rem 1rem 1rem ;
+    margin : 0.25rem;
+    overflow: hidden;
+}
+
+/* Navigation List Item Styles */
+nav ul li {
+    float: left; 
+    width: 50%;
+}
+
+/* Navigation Link Styles */
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    color: white; 
+    display: block; 
+    padding: 0.25rem; 
+    margin : 0.25rem;
+    border: 0.1rem solid white; 
+    border-radius: 10px; 
+    background-color: black; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+/* Navigation Link Hover Styles */
+nav ul li a:hover {
+    background-color: white;
+    border-color: rgb(255, 255, 255); 
+    color: black; 
+}
+
+/* Navigation home Link Styling */
+#home-link{
+    float : left;
+    width : 50%;
+
+}
+
+/* Navigation home Link Styling */
+#contact-link{
+    float : right;
+    width : 50%;
+}
+
+/* Main styles */
+main{
+    clear : both;
+    margin : .25rem;
+    padding : .25rem;
+    float : left;
+    width : 69%;
+    vertical-align: top;
+    
+}
+
+/* Main Section Container Styles */
+.main-container {
+    width : 69%;
+    margin: 0 auto; 
+    padding: 0rem; 
 }
 
 /* Main section styles */
-.main-section {
-    background-color: hsla(0, 0%, 40%, 0.5);
-    padding: 1.5rem;
-    text-align: center; 
-    padding: 1rem;
-}
-
-/* Figure styles in main section */
-.figura-seccion-principal {
-    width: 100%;
-    height: auto; 
+.main-section{
+    margin-top: 0.25rem;
     text-align: center;
-    margin: 1rem 0;
-    padding: 1.5rem;
 }
 
-/* Image styles inside figures */
-.figura-seccion-principal img {
-    width: 100%;
-    height: auto;
-    border-radius: 1.5rem;
+/* Main Section Image Styling */
+.main-section-figure img{
+    width : 100%; 
+    height : 100%; 
+    border-radius: 0.5rem;   
+    padding : 0.5rem; 
+}
+
+/* Bio Section */
+#bio{
+    float : left;
+    width : 48%;
+}
+
+/* Relative path image styles */
+#relative-path-image {
+    float : right;
+    width : 50%;
+    background-color: hsla(0, 0%, 82%, 0.144); 
+    border: .1rem solid rgb(253, 253, 253);
+    border-radius: 1rem;
+    color: rgb(255, 255, 255);
     padding: 1rem;
+}
+
+/* Table styles inside aside */
+aside table {
+    width: 95%;
+    margin: 1rem auto;
+    text-align: center; 
+    border: 0.1rem solid rgb(255, 255, 255);
+}
+
+/* Table Header Styles Inside Aside */
+aside th {
+    font-size: 1rem;
+    font-family: arial; 
+    font-variant: small-caps; 
+    color: #ffffff; 
+    text-align: center; 
+    border: solid #5f5f5f; 
+    padding: 0.5rem; 
+}
+
+/* Table Cell Styles Inside Aside */
+aside td {
+    font-size: 0.7em;
+    font-family: arial; 
+    font-variant: small-caps; 
+    color: #ffffff; 
+    text-align: center; 
+    border: solid #5f5f5f; 
+    padding: 0.9rem; 
+}
+
+/* Link Styles Inside Aside */
+aside a {
+    text-decoration: none; 
+    color: #ffffff;  
+    text-align: center; 
+    font-size: 0.7em;
+    font-family: Helvetica;
+    font-variant: small-caps; 
+}
+
+/* Link Hover Styles Inside Aside */
+aside a:hover {
+    color: #5f5f5f; 
+    text-align: center; 
+}
+
+/*class selector*/
+.headings{
+    color : rgb(252, 252, 252);
+    text-align: center;
+    padding: 0.25rem;
+    margin: 0.25rem;
+    font-family: Helvetica;
+    font-variant: small-caps;
+}
+
+/*multiple selector*/
+video, iframe{
+    width : 50%;
+    height : 50%;
+
+}
+
+/* Footer */
+footer{
+    clear : both;
+}
+
+/*  Figcaption styles */
+figcaption {
+    font-style: italic;
+    font-variant: small-caps;
+    font-size: 0.9rem; 
+}
+
+/* Main section styles */
+.main-section{
+    clear: both;
 }
 
 /* Video styles */
 video {
     width: 100%;
     height: auto;
-    border: 0.1rem solid #000; 
+    border: 0.1rem solid #ffffff; 
     border-radius: 1rem;
 }
 
-/* Absolute path image styles */
-#absolute-path-image {
-    background-color: hsla(0, 0%, 10%, 0.5);
-    border: 0.1rem solid rgb(255, 255, 255);
-    border-radius: 1rem;
+/* Contact Form Styles*/
+input[type=text],   
+input[type=email], 
+input[type=phone],   
+[type=submit], 
+[type=reset], 
+[type="message"],
+textarea,
+select{
+    width : 100%;
+    background-color: #ffffffec;
+    border: 1px solid #ccc;
+    border-radius: 6px; 
+}
+
+/* Form Label Styles*/
+label{
+    font-size: 1rem;
+    font-variant: small-caps;
     color: rgb(255, 255, 255);
-    padding: 1rem;
-}
-#absolute-path-image figcaption {
-    color: rgb(255, 255, 255); 
+    font-family: Helvetica;
+    text-align: right; 
 }
 
-/* Relative path image styles */
-#relative-path-image {
-    background-color: hsla(0, 0%, 76%, 0.5); 
-    border: 0.1rem solid rgb(0, 0, 0);
-    border-radius: 1rem;
-    color: rgb(0, 0, 0);
-    padding: 1rem;
-}
-#relative-path-image figcaption {
-    color: rgb(0, 0, 0); 
-}
-
-/* Footer styles */
-footer p{
+/* Form Button Styles*/
+button[type="submit"], button[type="reset"] {
+    text-decoration: none;
+    font-weight: bold;
+    font-variant: small-caps;
     color: white; 
-    font-size: 0.75rem;
+    display: block; 
+    padding: 0.25rem; 
+    margin : 0.25rem;
+    border: 0.1rem solid white; 
+    border-radius: 10px; 
+    background-color: black; 
+    transition: background-color 0.3s, color 0.3s; 
 }
 
-/* Blockquote with quote id styles */
-#quote {
-    border: 0.1rem solid #ffffff;
-    border-radius: 0.2rem;
-    box-shadow: 0.2rem 0.2rem 0.2rem rgb(73, 73, 73);
-    padding: 1rem;
-    background-color: hsla(0, 0%, 7%, 0.5); 
+/* Styles when cursor is over the buttons */
+button[type="submit"]:hover, button[type="reset"]:hover {
+    background-color: white;
+    border-color: rgb(255, 255, 255); 
+    color: black; 
+}
+
+/* Form Placeholder Styles*/
+input[type=text]::placeholder,
+input[type=email]::placeholder,
+input[type=phone]::placeholder,
+textarea::placeholder,
+select::placeholder { 
+    color: #000000; 
+}
+
+/* Media Queries */
+/* Media query for screens up to 1200px */
+@media (max-width: 1200px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+/* Media query for screens up to 900px */
+@media (max-width: 900px) {
+    html {
+        font-size: 14px;
+    }
+    #bio, #relative-path-image {
+        float: none;
+        width: 100%;
+    }
+}
+
+/* Media query for screens up to 600px */
+@media (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+    #home-link, #contact-link, main, aside {
+        float: none;
+        width: 100%;
+    }
+    aside {
+        text-align: center;
+    }
+    table {
+        margin: auto;
+    }
 }

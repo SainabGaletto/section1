@@ -1,0 +1,135 @@
+<!--Name: Sainab Galetto | Student number: 8903493-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Jane,Fonda,Activist,Actress,Blogger,Writer">
+    <meta name="description" content="This site is about the life of Jane Fonda">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Jane Fonda Biography</title> 
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <!-- Main Heading -->
+        <h1 id="header-heading" class="headings">Jane Fonda</h1>
+    </header>
+    <!-- Navigation Section -->
+    <nav>
+        <ul>
+            <li id="home-link"><a href="index.html">Home</a></li>
+            <li id="contact-link"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <h2 id="main-heading">Contact</h2>
+        </div>
+        <div class="container">
+            <form name="contact_form" id="contact_form" method="post" action="contact.php">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name" required>
+                    </div>
+                    <div>
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name" required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="phone" id="phone" name="phone" placeholder="555-555-5555" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="example@example.com" required>
+                    </div>
+                    <div>
+                        <label>Subscribe to Newsletter?</label>
+                        <div>
+                            <input type="radio" id="subscribe_yes" name="subscribe" value="yes" required>
+                            <label for="subscribe_yes">Yes</label>
+                            <input type="radio" id="subscribe_no" name="subscribe" value="no" required>
+                            <label for="subscribe_no">No</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="contact_method">Preferred Contact Method</label>
+                        <select type="contact_method" id="contact_method" name="contact_method" required>
+                            <option value="" disabled selected>Select</option>
+                            <option value="Email">Email</option>
+                            <option value="Phone">Phone</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message">Message</label>
+                        <textarea type="message" id="message" name="message" rows="5" placeholder="Enter your message" required></textarea>
+                    </div>
+                    <div>
+                        <label for="file">Upload File</label>
+                        <input type="file" id="file" name="file" multiple>
+                    </div>
+                    <br><div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+    <!-- Aside Content Section -->
+    <!-- FAQ Section Heading -->
+<aside>
+        <h3>FAQs</h3>
+        <table>
+            <tr>
+                <th>Question</th>
+                <th>Answer</th>
+            </tr>
+            <tr>
+                <td>What was Jane Fonda's full name at birth?</td>
+                <td>Jane Seymour Fonda.</td>
+            </tr>
+            <tr>
+                <td>Which movie earned Jane Fonda her first Academy Award for Best Actress?</td>
+                <td>"Klute" (1971), where she played the role of Bree Daniels, a New York City prostitute.</td>
+            </tr>
+            <tr>
+                <td>What is the title of the memoir that Jane Fonda published in 2005, which became a bestseller?</td>
+                <td>"My Life So Far".</td>
+            </tr>
+            <tr>
+                <td>What recognition did Jane Fonda receive in 2001 for her work in the field of social activism?</td>
+                <td>She received the Gloria Steinem Award for feminist activism.</td>
+            </tr>
+            <tr>
+                <td>What 2018 documentary followed the life and activism of Jane Fonda?</td>
+                <td>The film is titled "Jane Fonda in Five Acts".</td>
+            </tr>
+            <tr>
+                <td>What was the name of the tour Jane Fonda embarked on in various states of the United States in 2019 to advocate for climate action?</td>
+                <td>The tour was called "Fire Drill Fridays: On the Road for the Green New Deal".</td>
+            </tr>
+        </table>
+        
+        <!-- External Links Section Heading -->
+        <h3>Resources</h3>
+        <a href="https://www.janefonda.com/" target="_blank">Official Website - Jane Fonda</a>
+        <br><a href="https://janepac.com/" target="_blank">Climate PAC - Jane Fonda</a>
+        <br><a href="https://med.emory.edu/departments/gynecology-obstetrics/centers/jane-fonda-center/index.html" target="_blank">The Jane Fonda Center for Reproductive Health</a>
+        <br><a href="https://www.gcapp.org/" target="_blank">The Georgia Campaign for Adolescent</a>
+</aside>
+    <!-- Footer Section -->
+    <footer>
+        <!-- Copyright Information -->
+        <p>&#169; <i>Sainab Galetto 2024</i></p>
+    </footer>
+</body>
+</html>
